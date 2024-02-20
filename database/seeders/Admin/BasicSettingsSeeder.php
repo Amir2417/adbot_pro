@@ -16,43 +16,47 @@ class BasicSettingsSeeder extends Seeder
     public function run()
     {
         $data = [
-            'site_name'         => "Xmin",
-            'site_title'        => "AppDevs Admin Panel",
+            'site_name'         => "XBot",
+            'site_title'        => "ChatGPT Open AI",
             'base_color'        => "#F26822",
             'secondary_color'   => "#262626",
             'otp_exp_seconds'   => "3600",
             'timezone'          => "Asia/Dhaka",
+            'user_registration' => 1,
+            'agree_policy'      => 1,
             'broadcast_config'  => [
-                "method" => "pusher",
-                "app_id" => "", 
-                "primary_key" => "", 
-                "secret_key" => "", 
-                "cluster" => "ap2" 
+                "method"        => "pusher", 
+                "app_id"        => "1574360", 
+                "primary_key"   => "971ccaa6176db78407bf", 
+                "secret_key"    => "a30a6f1a61b97eb8225a", 
+                "cluster"       => "ap2" 
+            ],
+            'mail_config'       => [
+                "method"        => "smtp", 
+                "host"          => "appdevs.net",
+                "port"          => "465", 
+                "encryption"    => "ssl",
+                "username"      => "system@appdevs.net",
+                "password"      => "QP2fsLk?80Ac",
+                "from"          => "system@appdevs.net", 
+                "mail_address"  => "system@appdevs.net", 
+                "app_name"      => "XBot",
             ],
             'push_notification_config'  => [
-                "method" => "pusher", 
-                "instance_id" => "", 
-                "primary_key" => ""
-            ],
-            'kyc_verification'  => true,
-            'mail_config'       => [
-                "method" => "smtp",
-                "host" => "",
-                "port" => "", 
-                "encryption" => "",
-                "username" => "",
-                "password" => "",
-                "from" => "", 
-                "app_name" => "",
+                "method"                => "pusher", 
+                "instance_id"           => "fd7360fa-4df7-43b9-b1b5-5a40002250a1", 
+                "primary_key"           => "6EEDE8A79C61800340A87C89887AD14533A712E3AA087203423BF01569B13845"
             ],
             'email_verification'    => true,
-            'site_logo_dark'        => "seeder/dark-logo.webp",
-            'site_logo'             => "seeder/white-logo.webp",
-            'site_fav_dark'         => "seeder/dark-fav.webp",
-            'site_fav'              => "seeder/white-fav.webp",
-            'web_version'           => "1.0.0",
-            'admin_version'           => "2.5.0",
+            'email_notification'    => true,
+            'kyc_verification'      => true,
+            'site_logo_dark'        => 'seeder/logo-dark.png',
+            'site_logo'             => 'seeder/logo-white.png',
+            'site_fav_dark'         => 'seeder/fav-icon.png',
+            'site_fav'              => 'seeder/fav-icon.png',
+            'web_version'           => '1.0.0',
         ];
+
 
         BasicSettings::firstOrCreate($data);
     }
