@@ -14,8 +14,14 @@
 </head>
 <body>
 
-{{-- @include('frontend.partials.preloader') --}}
-@include('frontend.partials.scroll-to-top')
+@include('frontend.partials.preloader')
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="body-overlay" class="body-overlay"></div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    End body overlay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 @include('frontend.partials.header')
 
 @yield("content")
