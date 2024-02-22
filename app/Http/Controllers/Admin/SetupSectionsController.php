@@ -178,24 +178,31 @@ class SetupSectionsController extends Controller
      */
     public function bannerUpdate(Request $request,$slug) {
 
-        $basic_field_name = [
-            'heading' => "required|string|max:100",
-            'sub_heading' => "required|string|max:500",
-            'button_name' => "required|string|max:50",
-            'button_link' => "required|string|max:255",
-            'video_link'  => "nullable|url",
+        $basic_field_name           = [
+            'heading'               => "required|string|max:100",
+            'sub_heading'           => "required|string|max:500",
+            'first_button_name'     => "required|string|max:50",
+            'second_button_name'    => "required|string|max:50",
         ];
 
-        $slug = Str::slug(SiteSectionConst::BANNER_SECTION);
-        $section = SiteSections::where("key",$slug)->first();
-        $data['image'] = $section->value->image ?? null;
-        if($request->hasFile("image")) {
-            $data['image']      = $this->imageValidate($request,"image",$section->value->image ?? null);
+        $slug       = Str::slug(SiteSectionConst::BANNER_SECTION);
+        $section    = SiteSections::where("key",$slug)->first();
+        if($section      != null){
+            $data         = json_decode(json_encode($section->value),true);
+        }else{
+            $data         = [];
         }
+        $validator  = Validator::make($request->all(),[
+            'video_link'       => "required|string|url|max:255",
+        ]);
 
-        $data['language']  = $this->contentValidate($request,$basic_field_name);
-        $update_data['value']  = $data;
-        $update_data['key']    = $slug;
+        if($validator->fails()) return back()->withErrors($validator->errors())->withInput();
+        $validated = $validator->validate();
+
+        $data['video_link']     = $validated['video_link'];
+        $data['language']       = $this->contentValidate($request,$basic_field_name);
+        $update_data['value']   = $data;
+        $update_data['key']     = $slug;
 
         try{
             SiteSections::updateOrCreate(['key' => $slug],$update_data);

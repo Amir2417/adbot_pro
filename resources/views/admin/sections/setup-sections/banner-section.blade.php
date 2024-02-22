@@ -34,7 +34,7 @@
             <form class="card-form" action="{{ setRoute('admin.setup.sections.section.update',$slug) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row justify-content-center mb-10-none">
-                    <div class="col-xl-4 col-lg-4 form-group">
+                    {{-- <div class="col-xl-4 col-lg-4 form-group">
                         @include('admin.components.form.input-file',[
                             'label'             => "Image:",
                             'name'              => "image",
@@ -42,8 +42,8 @@
                             'old_files_path'    => files_asset_path("site-section"),
                             'old_files'         => $data->value->image ?? "",
                         ])
-                    </div>
-                    <div class="col-xl-8 col-lg-8">
+                    </div> --}}
+                    <div class="col-xl-12 col-lg-12">
                         <div class="product-tab">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -60,48 +60,48 @@
                                     <div class="tab-pane @if (get_default_language_code() == $item->code) fade show active @endif" id="{{ $item->name }}" role="tabpanel" aria-labelledby="english-tab">
                                         <div class="form-group">
                                             @include('admin.components.form.input',[
-                                                'label'     => "Heading*",
+                                                'label'     => __("Heading")."*",
                                                 'name'      => $item->code . "_heading",
                                                 'value'     => old($item->code . "_heading",$data->value->language->$lang_code->heading ?? "")
                                             ])
                                         </div>
                                         <div class="form-group">
                                             @include('admin.components.form.input',[
-                                                'label'     => "Sub Heading*",
+                                                'label'     => __("Sub Heading")."*",
                                                 'name'      => $item->code . "_sub_heading",
                                                 'value'     => old($item->code . "_sub_heading",$data->value->language->$lang_code->sub_heading ?? "")
                                             ])
                                         </div>
                                         <div class="form-group">
                                             @include('admin.components.form.input',[
-                                                'label'     => "Button Name*",
-                                                'name'      => $item->code . "_button_name",
-                                                'value'     => old($item->code . "_button_name",$data->value->language->$lang_code->button_name ?? "")
+                                                'label'     => __("First Button Name")."*",
+                                                'name'      => $item->code . "_first_button_name",
+                                                'value'     => old($item->code . "_first_button_name",$data->value->language->$lang_code->first_button_name ?? "")
                                             ])
                                         </div>
                                         <div class="form-group">
                                             @include('admin.components.form.input',[
-                                                'label'     => "Button Link*",
-                                                'name'      => $item->code . "_button_link",
-                                                'value'     => old($item->code . "_button_link",$data->value->language->$lang_code->button_link ?? "")
-                                            ])
-                                        </div>
-                                        <div class="form-group">
-                                            @include('admin.components.form.input',[
-                                                'label'     => "Video Link*",
-                                                'name'      => $item->code . "_video_link",
-                                                'value'     => old($item->code . "_video_link",$data->value->language->$lang_code->video_link ?? "")
+                                                'label'     => __("Second Button Name")."*",
+                                                'name'      => $item->code . "_second_button_name",
+                                                'value'     => old($item->code . "_second_button_name",$data->value->language->$lang_code->second_button_name ?? "")
                                             ])
                                         </div>
                                     </div>
                                 @endforeach
+                                <div class="form-group">
+                                    @include('admin.components.form.input',[
+                                        'label'     => __("Video Link")."*",
+                                        'name'      => "video_link",
+                                        'value'     => old("video_link",$data->value->video_link ?? "")
+                                    ])
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-12 col-lg-12 form-group">
                         @include('admin.components.button.form-btn',[
                             'class'         => "w-100 btn-loading",
-                            'text'          => "Submit",
+                            'text'          => __("Submit"),
                             'permission'    => "admin.setup.sections.section.update"
                         ])
                     </div>
