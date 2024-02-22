@@ -58,7 +58,7 @@
                 ])
 
                 {{-- Section Transaction & Logs --}}
-                @include('admin.components.side-nav.link-group',[
+                {{-- @include('admin.components.side-nav.link-group',[
                     'group_title'       => "Transactions & Logs",
                     'group_links'       => [
                         'dropdown'      => [
@@ -109,7 +109,7 @@
                         ],
 
                     ]
-                ])
+                ]) --}}
                 {{-- Interface Panel --}}
                 @include('admin.components.side-nav.link-group',[
                     'group_title'       => "Interface Panel",
@@ -219,7 +219,7 @@
                 
                 @include('admin.components.side-nav.link',[
                     'route'     => 'admin.languages.index',
-                    'title'     => "Languages",
+                    'title'     => __("Languages"),
                     'icon'      => "menu-icon las la-language",
                 ])
 
@@ -229,7 +229,7 @@
                     'group_links'       => [
                         'dropdown'      => [
                             [
-                                'title'     => "Setup Email",
+                                'title'     => __("Setup Email"),
                                 'icon'      => "menu-icon las la-envelope-open-text",
                                 'links'     => [
                                     [

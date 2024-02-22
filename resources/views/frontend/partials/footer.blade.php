@@ -7,10 +7,10 @@
             <div class="col-xl-6 col-lg-6">
                 <div class="subscribe-wrapper">
                     <div class="subscribe-content">
-                        <h3 class="title">Subscribe to Newsletter!</h3>
+                        <h3 class="title">{{ __("Subscribe to Newsletter!") }}</h3>
                         <div class="input-area">
-                            <input type="email" name="email" placeholder="Enter your email:">
-                            <button class="btn--base" type="submit">Subscribe</button>
+                            <input type="email" name="email" placeholder="{{ __("Enter your email") }}:">
+                            <button class="btn--base" type="submit">{{ __("Subscribe") }}</button>
                         </div>
                     </div>
                 </div>
@@ -20,14 +20,14 @@
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-30">
                 <div class="footer-widget">
                     <div class="footer-logo">
-                        <a class="site-logo site-title" href="index.html"><img src="assets/images/logo/logo.png" alt="site-logo"></a>
+                        <a class="site-logo site-title" href="{{ setRoute('frontend.index') }}"><img src="{{ get_logo($basic_settings) }}" alt="site-logo"></a>
                     </div>
                     <p>GPT-4 can solve difficult problems with greater accuracy, thanks to its broader general knowledge</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-30">
                 <div class="footer-widget">
-                    <h4 class="title">CONTACT</h4>
+                    <h4 class="title">{{ __("CONTACT") }}</h4>
                     <ul class="footer-list">
                         <li><a href="tel:1111000000">+8801111000000</a></li>
                         <li><a href="#0">support@appdevs.net</a></li>
@@ -37,7 +37,7 @@
             </div>
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-30">
                 <div class="footer-widget">
-                    <h4 class="title">USEFULL LINKS</h4>
+                    <h4 class="title">{{ __("USEFULL LINKS") }}</h4>
                     <ul class="footer-list">
                         <li><a href="#0">Privacy Policy</a></li>
                         <li><a href="#0">Terms & Condition</a></li>
@@ -47,13 +47,13 @@
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-30">
                 <div class="footer-widget">
-                    <h4 class="title">DOWNLOAD APP</h4>
+                    <h4 class="title">{{ __("DOWNLOAD APP") }}</h4>
                     <ul class="footer-list">
                         <li><a href="#0">
-                            <img src="assets/images/app/play_store.png" alt="google">
+                            <img src="{{ asset('public/frontend') }}/images/app/play_store.png" alt="google">
                         </a></li>
                         <li><a href="#0">
-                            <img src="assets/images/app/app_store.png" alt="apple">
+                            <img src="{{ asset('public/frontend') }}/images/app/app_store.png" alt="apple">
                         </a></li>
                     </ul>
                 </div>
@@ -63,7 +63,7 @@
     <div class="copyright-wrapper">
         <div class="container">
             <div class="copyright-area">
-                <p>Copyright © 2023 <a href="#0" class="text--base">ADbot</a>. All Rights Reserved.</a></p>
+                <p>{{ __("Copyright") }} © 2024 <a href="#0" class="text--base">{{ $basic_settings->site_name }}</a>. {{ __("All Rights Reserved.") }}</a></p>
                 <div class="social-area">
                     <ul class="footer-social pb-10">
                         <li><a href="#0"><i class="lab la-facebook-f"></i></a></li>
