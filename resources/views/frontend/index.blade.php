@@ -38,7 +38,7 @@
             <div class="col-lg-3 mb-30">
                 <div class="core-feature-item">
                     <div class="thumb">
-                        <img src="assets/images/banner/element-6.png" alt="thumb">
+                        <img src="{{ asset('public/frontend') }}/images/banner/element-6.png" alt="thumb">
                     </div>
                     <h4 class="title">Text Generation</h4>
                 </div>
@@ -46,7 +46,7 @@
             <div class="col-lg-3 mb-30">
                 <div class="core-feature-item">
                     <div class="thumb">
-                        <img src="assets/images/banner/element-5.png" alt="thumb">
+                        <img src="{{ asset('public/frontend') }}/images/banner/element-5.png" alt="thumb">
                     </div>
                     <h4 class="title">Programming Help</h4>
                 </div>
@@ -54,7 +54,7 @@
             <div class="col-lg-3 mb-30">
                 <div class="core-feature-item">
                     <div class="thumb">
-                        <img src="assets/images/banner/element-4.png" alt="thumb">
+                        <img src="{{ asset('public/frontend') }}/images/banner/element-4.png" alt="thumb">
                     </div>
                     <h4 class="title">Mathematical Queries</h4>
                 </div>
@@ -62,7 +62,7 @@
             <div class="col-lg-3 mb-30">
                 <div class="core-feature-item">
                     <div class="thumb">
-                        <img src="assets/images/banner/element-7.png" alt="thumb">
+                        <img src="{{ asset('public/frontend') }}/images/banner/element-7.png" alt="thumb">
                     </div>
                     <h4 class="title">Image Generator</h4>
                 </div>
@@ -93,7 +93,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6 mb-30">
                 <div class="work-item">
                     <div class="thumb-area">
-                        <img src="assets/images/how-its-work/add-user.png" alt="statistics-item">
+                        <img src="{{ asset('public/frontend') }}/images/how-its-work/add-user.png" alt="statistics-item">
                     </div>
                     <div class="content">
                         <h4>Create an account</h4>
@@ -104,7 +104,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6 mb-30">
                 <div class="work-item">
                     <div class="thumb-area">
-                        <img src="assets/images/how-its-work/input.png" alt="statistics-item">
+                        <img src="{{ asset('public/frontend') }}/images/how-its-work/input.png" alt="statistics-item">
                     </div>
                     <div class="content">
                         <h4>Type your Queries</h4>
@@ -115,7 +115,7 @@
             <div class="col-lg-4 col-md-4 col-sm-6 mb-30">
                 <div class="work-item">
                     <div class="thumb-area">
-                        <img src="assets/images/how-its-work/assistant.png" alt="statistics-item">
+                        <img src="{{ asset('public/frontend') }}/images/how-its-work/assistant.png" alt="statistics-item">
                     </div>
                     <div class="content">
                         <h4>& Get The Answer</h4>
@@ -149,7 +149,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/1.png" alt="icon">
+                            <img src="{{ asset('public/frontend') }}/images/feature/1.png" alt="icon">
                         </div>
                         <h3 class="title">Language Understanding</h3>
                         <p>I can understand and process natural language input to provide relevant and coherent responses to your questions and statements.</p>
@@ -158,7 +158,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/2.png" alt="icon">
+                            <img src="{{ asset('public/frontend') }}/images/feature/2.png" alt="icon">
                         </div>
                         <h3 class="title">Context Awareness</h3>
                         <p>I maintain context throughout our conversation, which means I can remember previous interactions and use that information to give more accurate and consistent replies.</p>
@@ -167,7 +167,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/3.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/3.png" alt="">
                         </div>
                         <h3 class="title">Multilingual Support</h3>
                         <p>I have been trained on a diverse range of languages, so I can understand and respond in various languages besides English.</p>
@@ -176,7 +176,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/4.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/4.png" alt="">
                         </div>
                         <h3 class="title">Information Retrieval</h3>
                         <p>I can provide factual information on a wide array of topics, drawing from my training data up until September 2021.</p>
@@ -185,7 +185,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/5.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/5.png" alt="">
                         </div>
                         <h3 class="title">Answering Questions</h3>
                         <p>Feel free to ask me any questions, and I'll do my best to provide informative and helpful answers.</p>
@@ -194,7 +194,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/6.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/6.png" alt="">
                         </div>
                         <h3 class="title">Text Generation</h3>
                         <p>I can assist in generating creative writing, brainstorming ideas, crafting stories, and more.</p>
@@ -203,7 +203,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/7.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/7.png" alt="">
                         </div>
                         <h3 class="title">Text Completion</h3>
                         <p>If you need help finishing sentences or paragraphs, I can offer suggestions to complete the text based on the context.</p>
@@ -212,7 +212,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/8.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/8.png" alt="">
                         </div>
                         <h3 class="title">Programming Help</h3>
                         <p>I can provide assistance with coding-related queries, explain programming concepts, and offer code examples in various languages.</p>
@@ -221,7 +221,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/9.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/9.png" alt="">
                         </div>
                         <h3 class="title">General Knowledge</h3>
                         <p>I have been trained on a vast amount of information, so feel free to ask about historical events, scientific concepts, technology, and more.</p>
@@ -230,7 +230,7 @@
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="feature-item">
                         <div class="icon-area">
-                            <img src="assets/images/feature/10.png" alt="">
+                            <img src="{{ asset('public/frontend') }}/images/feature/10.png" alt="">
                         </div>
                         <h3 class="title">Conversational Partner</h3>
                         <p>Whether you want to engage in casual conversation or have a debate, I'm here to chat with you on various topics.</p>
@@ -279,7 +279,7 @@
                                         <span class="testimonial-date"><i class="las la-history"></i> 18-01-2023</span>
                                     </div>
                                     <div class="user-area">
-                                        <img src="assets/images/user/2.jpg" alt="user">
+                                        <img src="{{ asset('public/frontend') }}/images/user/2.jpg" alt="user">
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@
                                         <span class="testimonial-date"><i class="las la-history"></i> 18-01-2023</span>
                                     </div>
                                     <div class="user-area">
-                                        <img src="assets/images/user/2.jpg" alt="user">
+                                        <img src="{{ asset('public/frontend') }}/images/user/2.jpg" alt="user">
                                     </div>
                                 </div>
                             </div>
@@ -402,42 +402,42 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/1.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/1.png" alt="brand">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/2.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/2.png" alt="brand">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/3.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/3.png" alt="brand">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/4.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/4.png" alt="brand">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/5.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/5.png" alt="brand">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/6.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/6.png" alt="brand">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/7.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/7.png" alt="brand">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-item">
-                            <img src="assets/images/brand/8.png" alt="brand">
+                            <img src="{{ asset('public/frontend') }}/images/brand/8.png" alt="brand">
                         </div>
                     </div>
                 </div>
