@@ -24,6 +24,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 @include('frontend.partials.header')
 
+@include('user.auth.login-register')
+
 @yield("content")
 
 @include('frontend.partials.footer')

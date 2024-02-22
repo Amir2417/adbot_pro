@@ -7,7 +7,7 @@
             <span class="account-cross-btn"></span>
             <div class="account-logo text-center">
                 <a href="index.html" class="site-logo">
-                    <img src="assets/images/logo/logo.png" alt="logo">
+                    <img src="{{ get_logo($basic_settings) }}" alt="logo">
                 </a>
             </div>
             <h5 class="title">Login Information</h5>
@@ -52,7 +52,7 @@
         <div class="account-wrapper">
             <span class="account-cross-btn"></span>
             <div class="account-logo text-center">
-                <a class="site-logo" href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                <a class="site-logo" href="index.html"><img src="{{ get_logo($basic_settings) }}" alt="logo"></a>
             </div>
             <h5 class="title">Register Information</h5>
             <p>Please input your details and register to your account to get access to your dashboard.</p>
